@@ -1,0 +1,21 @@
+﻿.r-container{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.r-borderless tbody tr td, .r-borderless tbody tr th, .r-borderless thead tr th {
+    border: none;
+}
+
+.r-summary-table{
+    width: 500px;
+}
+
+.r-social-button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.r-profile-picture{
+    margin-bottom:20px;
+}

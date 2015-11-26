@@ -13,7 +13,7 @@ namespace rasmusj.se
         {
             HostConfiguration config = new HostConfiguration();
             config.UrlReservations.CreateAutomatically = true;
-
+            
             Console.Write("Starting app...");
 
             using (var host = new NancyHost(new AppBootstrapper(), config, new Uri("http://localhost:1337/")))

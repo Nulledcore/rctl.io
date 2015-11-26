@@ -16,15 +16,20 @@ namespace rasmusj.se
         {
             base.ApplicationStartup(container, pipelines);
             Console.Write("App started!");
+            StaticConfiguration.DisableErrorTraces = false;
+            pipelines.OnError += (ctx, exception) =>
+            {
+                ctx.Items.Add("OnErrorException", exception);
+                return null;
+            };
         }
 
         protected override void ConfigureConventions(NancyConventions conventions)
         {
             base.ConfigureConventions(conventions);
-
-            conventions.StaticContentsConventions.Add(
-                StaticContentConventionBuilder.AddDirectory("assets", @"assets")
-            );
+            conventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("Scripts", @"Scripts"));
+            conventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("App", @"App"));
+            conventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("fonts", @"fonts"));
         }
     }
 }

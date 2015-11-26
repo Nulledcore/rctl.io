@@ -1,4 +1,5 @@
 ﻿using Nancy;
+using Nancy.ModelBinding;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace rasmusj.se
 {
     public class HomeModule : NancyModule
     {
-        public HomeModule()
+        public HomeModule() 
         {
             Get["/"] = parameters => {
-                return View["home/index"];
+                return View["Home/index.html"]; 
             };
         }
     }
