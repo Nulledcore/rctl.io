@@ -34,6 +34,8 @@ type Context struct {
 	Vars     map[string]string
 }
 
+func main()  { }
+
 func init() {
 
 	var settings Settings
