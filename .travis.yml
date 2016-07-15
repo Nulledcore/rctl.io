@@ -13,7 +13,9 @@ script:
 - openssl aes-256-cbc -K $encrypted_c0dd1b006b1a_key -iv $encrypted_c0dd1b006b1a_iv
   -in settings_prod.json.enc -out settings_prod.json -d
 - git log --pretty=format:'%h' -n 1 > ./version.txt
-- "$HOME/go_appengine/goapp get"
+- echo "$HOME/go_appengine/goapp get -d -u && exit 0" > get.sh
+- chmod +x ./get.sh
+- ./get.sh
 - "$HOME/go_appengine/goapp test"
 - "$HOME/go_appengine/appcfg.py --oauth2_access_token=$GAEAUTH --oauth2_refresh_token=$GAEAUTHREFRESH update app.yaml"
 env:
