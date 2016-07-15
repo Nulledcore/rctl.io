@@ -1,7 +1,7 @@
 #!/bin/bash
 goapp get -u
-TEST=$(goapp test)
-if [[ $TEST == *"FAIL"* ]] 
+goapp test
+if [[ $? != 0 ]] 
 then
     echo "ERROR: Tests failed"
     exit 2
