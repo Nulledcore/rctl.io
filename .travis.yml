@@ -8,16 +8,12 @@ install:
 - curl -O https://storage.googleapis.com/appengine-sdks/featured/go_appengine_sdk_linux_amd64-1.9.35.zip
 - unzip -q go_appengine_sdk_linux_amd64-1.9.35.zip
 script:
-- 
+- openssl aes-256-cbc -K $encrypted_c0dd1b006b1a_key -iv $encrypted_c0dd1b006b1a_iv -in settings_prod.json.enc -out settings_prod.json -d
 - git log --pretty=format:'%h' -n 1 > ./version.txt
 - "./go_appengine/goapp get"
 - "./go_appengine/goapp test"
-- "./go_appengine/appcfg.py --oauth2_access_token=$GAEAUTH --oauth2_refresh_token=$GAEAUTHREFRESH
-  update app.yaml"
+- "./go_appengine/appcfg.py --oauth2_access_token=$GAEAUTH --oauth2_refresh_token=$GAEAUTHREFRESH update app.yaml"
 env:
   global:
   - secure: F0FRjJR97cTbez2/pcMkmOoAGuq6HRZEju1Tc2yCZW5wAM7EgjetB4wmo+S/tIo2poZDF+c87/VvBpv9oMB72rDW7v64C5O4uvkcJCyXdgaBuVDMO4YiGByehOJJ+u9TdrhvLLkosFWvO6pnPTK92E0CigNwC6THkShoVubbkEmNLg6icx+yCOU2FQg2SFN9kwVU3Sidqm8RAuq0FlGoVH9jmvei6jrz7CpzbgmJ+nRgpY+z0SkDagrUz+PMbxub7mOR6a2oWbJ9UsQNJRNg76KIweeEPz2M6uS9oEljdZaqA/8vZqL5GP3vjEKV5vbZb7iyuHAMpJOiG1xonJSreBD+YlCLRRQBh4KSMrsMqTxX4qEkANNsE00WzMtrJJ6qyhFcHBucOoeQ5ok/mVAh/HRGQkImVq6GJmBefsLkbXx05+46vIvyMmLI4hp5Zi2HliNIn0ZdqfOs/p01DlKQDkNRUPL09K3amY0E20pq0bPYsaa893k3hNzQ/D2xwZs3JOxOz2XhF7astRlx8g5773DImtkeNjQFhC87dJWujr7OXGihibFL+UFQRIGdVotjrgFJ0dsvrc2wI+5BCdTfD4k2N09po2BaikvdDvLYsex6ADTKoVqc8MwRnLzRXUlYRMfQk3n9OO8gkLALvs5rzaC5tkBuKd6lPrMcqKOW4go=
   - secure: dtzgJE7a8s4uVPoxy/U8sq6T+arbz5t8qy60VwAIQS2cEj0BpD+x5Zxf5fD5F3W5W9TH3vPw5IdNlccGJFQtNQO8lrQdk+lompygbe4sodC991+VzAyLqE2GAo9RZF/9XXo2oCb540dvmyYLAKfir0o4StVXpjSYbVXibEeTmD9sLFQ6MdaU88lZt0IMoszgNNSE1J7vqBzpcvHr4VdE+Bk8z3Qoqs6VAUObv7cdZQJMUMzwjnydzjhBuGOcYT29jjJifblHgzdaPskDMx1PrE5rxni21SuQVrQUsRTlYCZ1l95ykG2yDLaucqmFoGBUX4E6RZN9CyvJCXpR7tZLwCnvkkWI5ava2lnQtZwaCFKltOEVdVR4jhqsCVKynPm7fAdNzQOY/Bp385EgnpqnWscxYGoYZv44UilKpMdsDGfdhNmd4fJGO4eT840nMKxIrnfF9YoXZna2ti7JZRbr8yKfPVy5OzNHQ3CaW9mDyqqIZR1X443tPcnTyN0q4OlXlg1ZVf19GblW02f0yWUUMw4UIffW/aEdNJ/4ODka5JF5bosYrJ1lBk4fo/0ZHRWKlBTI+IinOn5ucY3TWoDQf5hx99N6VG8iq5JJiWUIG8dqZDRn/BHIJx81lJYUPQduMW+B+hNuaLsieTsWao9ktI8V9A8RIBYH5mnbw9E0Xts=
-dd:
-- openssl aes-256-cbc -K $encrypted_c0dd1b006b1a_key -iv $encrypted_c0dd1b006b1a_iv
-  -in settings_prod.json.enc -out settings_prod.json -d
