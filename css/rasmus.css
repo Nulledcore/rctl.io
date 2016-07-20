@@ -1,3 +1,62 @@
+.bold{
+    font-weight: bold;
+}
+.console{
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+    font-family: Consolas,monaco,monospace; 
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 60px;
+    max-width: 500px;
+    background-color: #300a24;
+    color: #fff;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    min-height: 190px;
+}
+.console-top{
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    max-width: 500px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color:   #778388;
+    color: #f1f3f3;
+    padding-left: 10px;
+    padding-top: 1px;
+    font-weight: bold;
+    text-shadow: rgba(255, 255, 255, 0.7) 0px 0px 0px;
+}
+.console-top > img{
+    margin-left: 10px;
+}
+#about{
+    display: none;
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+@keyframes blink{
+  to{opacity: .0;}
+}
+::selection{
+  background: black;
+}
 .profile-picture > img:hover{
     -webkit-filter: grayscale(100%);
     -webkit-transition: .5s ease-in-out;
@@ -23,8 +82,27 @@
         padding:20px;
     }
 }
-.profile-picture{
-    padding:10px;
+@media screen and (max-width: 800px) {
+    .console{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .profile-picture{
+        padding-left:60px;
+        padding-right:60px;
+        padding-top:10px;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 400px) {
+    h2{
+        font-size: 1.7em;
+    }
+    h4{
+        font-size: 1.3em;
+    }
 }
 .email{
     text-decoration: none;
