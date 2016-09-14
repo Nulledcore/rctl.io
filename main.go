@@ -15,8 +15,8 @@ func buildPageModel() interface{} {
 		Email string
 		Age   int
 	}{
-		Name: "Rasmus \"rctl\" Jönsson",
-		Email: "hello@rasmusj.se",
+		Name: "Rasmus Jönsson",
+		Email: "rctl",
 		Age: 21,
 	}
 }
