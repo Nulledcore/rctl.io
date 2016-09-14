@@ -1,7 +1,7 @@
 ## rasmusj.se - My personal website written in Go running in App Engine
 This is my personal website acting like sort of a project site and CV. It was first written i NancyFX a couple of years ago but has now been completely rewritten in Go instead to run on Google AppEngine. 
 
-[![Build Status](https://travis-ci.org/rasmusj-se/rasmusj.se.svg?branch=master)](https://travis-ci.org/rasmusj-se/rasmusj.se)
+[![Build Status](https://travis-ci.org/rctl/rasmusj.se.svg?branch=master)](https://travis-ci.org/rctl/rasmusj.se)
 [![Go Report Card](https://goreportcard.com/badge/github.com/rasmusj-se/rasmusj.se)](https://goreportcard.com/report/github.com/rasmusj-se/rasmusj.se)
 
 ### The Code
