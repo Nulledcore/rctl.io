@@ -14,7 +14,25 @@
     border-left: 1px solid gray;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
-    min-height: 210px;
+    min-height: 170px;
+}
+
+#rt-info-message{
+    text-align: center;
+    background-color: #ff5722;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12pt;
+    font-weight: 200;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
+    color: white;
+}
+
+.dynamic-content{
+    display: none;
 }
 
 h5 {
@@ -161,10 +179,18 @@ header > a {
     }
 }
 
-.r-social a{
-    color: #778388;
-    margin: 0.5em;
-    font-size: 1em;
+.r-social{
+   width: 50%;
+   margin: auto;
+   max-width: 600px;
+}
+.r-social a {
+    margin-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .r-social{
+        width: 100%;
+    }
 }
 
 .r-email a{
@@ -174,4 +200,80 @@ header > a {
 
 .r-pad{
     padding: 10px 20px 10px 20px;
+}
+
+.work-position{
+    line-height: 1em;
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 700px) {
+    .work-position{
+        font-size: 11pt;
+        font-weight: 400;
+    }
+    .work-time-small{
+        font-size: 8pt;
+    }
+}
+
+.work-title{
+    line-height: 1.5em;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.work-time{
+    font-size: 11pt;
+    font-weight: 400;
+}
+.work-time-small{
+    font-weight: 300;
+}
+
+.ac-blue{
+    border-top: solid 6px #2196f3 !important;
+}
+
+.ac-red{
+    border-top: solid 6px #f44336 !important;
+}
+
+.ac-orange{
+    border-top: solid 6px #ff9800 !important;
+}
+
+.ac-teal{
+    border-top: solid 6px #009688 !important;
+}
+
+.ac-cyan{
+    border-top: solid 6px #00bcd4 !important;
+}
+
+.ac-green{
+    border-top: solid 6px #4caf50 !important;
+}
+
+.ac-deep-orange{
+    border-top: solid 6px #ff5722 !important;
+}
+
+.ac-yellow{
+    border-top: solid 6px #ffeb3b !important;
+}
+.ac-purple{
+    border-top: solid 6px #9c27b0 !important;
+}
+.ac-darkblue{
+    border-top: solid 6px #3b5998 !important;
+}
+.work{
+    max-width: 1000px;
+    margin: auto;
+}
+.no-border{
+    border: none;
+}
+.no-border > li{
+    border: none !important;
 }
