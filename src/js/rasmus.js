@@ -35,6 +35,9 @@ $(function(){
         document.querySelector("#email-primary-2").setAttribute("href", "mailto:" + info.email);
         document.querySelector("#misc").innerHTML = info.misc;
         document.querySelector("#message").innerHTML = info.message;
+				if(info.message == "none"){
+					document.querySelectorAll(".message-box").forEach(x => x.style.display = "none")
+				}
         document.querySelector("#terminal-content").innerHTML = info.terminalContent;
         document.querySelectorAll(".dynamic-loading").forEach(x => x.style.display = "none")
         document.querySelectorAll(".dynamic-content").forEach(x => x.style.display = "block")

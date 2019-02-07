@@ -21,7 +21,7 @@
       <h2 class="white-text">
         Rasmus Jönsson
       </h2>
-      <h4 class="r-email">
+      <h5 class="r-email">
         <a href="" class="email white-text darken-3" target="_blank" id="email-primary">
           <div class="preloader-wrapper small active">
             <div class="spinner-layer spinner-green-only">
@@ -37,25 +37,10 @@
             </div>
           </div>
         </a>
-      </h4>
-      <div class="r-social">
-        <div class="row">
-          <div class="col m3 s6">
-            <a href="https://medium.com/@rctl" target="_blank" class="btn white-text blue z-depth-4">Medium</a>
-          </div>
-          <div class="col m3 s6">
-            <a href="https://twitter.com/_rctl" target="_blank" class="btn white-text blue z-depth-4">Twitter</a>
-          </div>
-          <div class="col m3 s6">
-            <a href="https://github.com/rctl" target="_blank" class="btn white-text blue z-depth-4">GitHub</a>
-          </div>
-          <div class="col m3 s6">
-            <a href="https://www.linkedin.com/in/rasmusjoensson/" target="_blank" class="btn white-text blue z-depth-4">LinkedIn</a>
-          </div>
-        </div>
+      </h5>
       </div>
-      <p class="center white-text">
-        <i id="message">...</i>
+      <p class="message-box center orange-text">
+        <b id="message"></b>
       </p>
     </div>
     <div class="container">
@@ -71,37 +56,19 @@
         <span class="green-text text-darken-2">$ </span>
         <span class="bash" id="terminal"></span>
       </div>
+			<h5 class="more center">Work History</h5>
       <div class="work">
-          <!--<div class="col m10 offset-m1 s12 work-card">
+          <div class="col m10 offset-m1 s12 work-card">
             <div class="card horizontal z-depth-3 ac-darkblue blue-grey darken-3">
               <div class="card-image valign-wrapper">
                 <a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" style="width: 90px; margin-left: 20px;"></a>
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <h5 class="work-position">Production Engineering <small class="right work-time hide-on-med-and-down">
-                      From March 2019</small></h5>
+                  <h5 class="work-position">Production Engineer <small class="right work-time hide-on-med-and-down">
+                      Since March 2019</small></h5>
                   <p class="work-title">Facebook<span class="hide-on-large-only work-time-small"><br>
-                      From March 2019</span></p>
-                  <p class="hide-on-med-and-down">
-										Dublin, Ireland.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-			    --!>
-          <div class="col m10 s12 work-card">
-            <div class="card horizontal z-depth-3 ac-darkblue blue-grey darken-3">
-              <div class="card-image valign-wrapper">
-                <a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" style="width: 90px; margin-left: 20px;"></a>
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h5 class="work-position">Production Engineering Intern <small class="right work-time hide-on-med-and-down">Summer
-                      2018</small></h5>
-                  <p class="work-title">Facebook<span class="hide-on-large-only work-time-small"><br>
-                      Summer 2018</span></p>
+                      Since March 2019</span></p>
                   <p class="hide-on-med-and-down">
 										Dublin, Ireland.
                   </p>
@@ -130,7 +97,26 @@
 					<div class="col m10 offset-m1 s12 center show-more">
 						<a href="#" class="btn-flat white-text" id="show-more">Show full work history</a>
 					</div>	
-          <div class="col m10 offset-m1 s12 work-card more">
+   				<div class="col m10 offset-m1 s12 work-card more">
+            <div class="card horizontal z-depth-3 ac-darkblue blue-grey darken-3">
+              <div class="card-image valign-wrapper">
+                <a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" style="width: 90px; margin-left: 20px;"></a>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5 class="work-position">Production Engineering Intern <small class="right work-time hide-on-med-and-down">Summer
+                      2018</small></h5>
+                  <p class="work-title">Facebook<span class="hide-on-large-only work-time-small"><br>
+                      Summer 2018</span></p>
+                  <p class="hide-on-med-and-down">
+										Dublin, Ireland.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+					<div class="col m10 offset-m1 s12 work-card more">
             <div class="card horizontal ac-teal z-depth-3 blue-grey darken-3">
               <div class="card-image valign-wrapper">
                 <a href="https://worldish.se/" target="_blank"><img src="https://worldish.se/images/logo.png" style="width: 90px; margin-left: 20px;"></a>
@@ -204,86 +190,9 @@
             </div>
           </div>
       </div>
-      <div class="center more">
-        <a href="/rasmus_jonsson_cv_2017.pdf" class="btn blue z-depth-4"><i class="material-icons left">picture_as_pdf</i>Download
-          full CV</a>
-        <br><br>
-      </div>
-      <br>
-      <div class="card r-pad ac-purple blue-grey darken-3 z-depth-3">
-        <div class="row">
-          <div class="col m6 s12">
-            <h5>Kubernetes</h5>
-            <p>
-              The past year I have been focusing on finding a redundant and scaleable long-term solution to the way I
-              run services in the
-              cloud. Until now I have just been running a couple of VMs and my services on top of those, this is
-              perhaps the
-              most common way of running services. The lack of automation in this type of solution tend to create a lot
-              of
-              toil work and then there is always the risk of VM faliure, everything is dependent on everything else and
-              almost
-              all the services are packed into the same VM.
-              <br>
-              <a href="https://blog.rasmusj.se/2016/06/kubernetes-pt-1.html">Read more of the blog post</a>
-            </p>
-          </div>
-          <div class="col m6 s12">
-            <h5>Performance of WebApps</h5>
-            <p>
-              With the right tools and the right technology you can increase your website performance by a lot.
-              Increasing your site performance
-              has many upsides, it is cheaper to deliver and gives your visitors a better experience and impression of
-              your
-              website. There are a few tips and tricks to increase website performance, in this blog post I will walk
-              you through
-              a few of them and how I used them when developing the new website for my company.
-              <br>
-              <a href="https://blog.rasmusj.se/2016/05/increasing-website-performance-by-450.html">Read more of the
-                blog post</a>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col m6 s12">
-            <h5>Encrypted voice calls</h5>
-            <p>
-              A couple of weeks ago I got started on a new app for android that features encrypted VOIP calls. The idea
-              was sparked when
-              we started a new term at university where we will be working with a project to create an app for
-              communication
-              in case of a natural disaster. I thought I could look around to see how difficult it would be to create
-              an app
-              with voice communication, turns out it wasn't all to difficult so I just went ahead and created my own
-              out of
-              pure curiosity.
-              <br>
-              <a href="http://blog.rasmusj.se/2017/02/cryptovoice-encrypted-voice-calls.html">Read more of the blog
-                post</a>
-            </p>
-          </div>
-          <div class="col m6 s12">
-            <h5>Adaptive Streaming over HTTP</h5>
-            <p>
-              A while back I wrote a report on dynamic streaming over HTTP (DASH) with a classmate. The report, that
-              was limited to about
-              8 pages, is linked at the end of this blogpost. The idea behind DASH is to allow video streaming over the
-              internet
-              to adapt the quality of the video to the available bandwidth. Such as the quality of the video is
-              maximized,
-              but the video does not freeze or stall. This is especially useful in high jitter network links such as
-              long range
-              mobile communication or high load networks.
-              <br>
-              <a href="http://blog.rasmusj.se/2017/02/dynamic-adaptive-streaming-over-http.html">Read more of the blog
-                post</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col m6 s12">
+			<br>
+			<h5 class="more center">Other Information</h5>
+        <div class="col m10 offset-m1 s12 work-card">
           <div class=" card blue-grey darken-3 ac-green">
             <div class="card-stacked">
               <div class="card-content">
@@ -292,16 +201,12 @@
                   <div class="chip">Go</div>
                   <div class="chip">Docker</div>
                   <div class="chip">Kubernetes</div>
-                  <div class="chip">Nginx</div>
                   <div class="chip">DNS</div>
                   <div class="chip">Linux</div>
                   <div class="chip">Python</div>
                   <div class="chip">Networking</div>
                   <div class="chip">Systems Architecture</div>
-                  <div class="chip">Leadership</div>
                   <div class="chip">Project management</div>
-                  <div class="chip">Production</div>
-                  <div class="chip">C# .NET</div>
                 </div>
               </div>
             </div>
@@ -314,26 +219,11 @@
 							</div>
             </div>
 						</div>
-            <div class="card no-border ac-deep-orange blue-grey darken-3">
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h5>Publications</h5>
-                  <div>
-                    <b>HTTP/2, Server Push and Branched Video</b> <br><a href="http://liu.diva-portal.org/smash/record.jsf?dswid=-1209&pid=diva2%3A1113506&c=1&searchType=SIMPLE&language=en&query=&af=%5B%5D&aq=%5B%5B%7B%22freeText%22%3A%22rasmus+jönsson%22%7D%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&onlyFullText=false&sf=all">View
-                      on e-pub</a>
-                  </div><br>
-                  <div>
-                    <b>Dynamic Adaptive Streaming over HTTP </b><br><a href="https://drive.google.com/file/d/0B_J4Ljo0PdiPdjl3bFk3T1BmNVk/view?usp=sharing">Download
-                      PDF</a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="col m6 s12 progress dynamic-loading">
             <div class="indeterminate"></div>
           </div>
-          <div class="col m6 s12 dynamic-content">
+          <div class="col m10 offset-m1 s12 work-card dynamic-content">
             <div class="card no-border ac-cyan blue-grey darken-3">
              <div class="card-stacked">
               <div class="card-content">
@@ -345,14 +235,6 @@
                 </p>
 								<br>                
 								<span id="misc"></span>
-                <br><br>
-                <p> The following domains are owned and operated by me: </p>
-                <p> <a href="https://rctl.io">rctl.io</a>, <a href="https://rctl.xyz">rctl.xyz</a>, <a href="https://rctl.email">rctl.email</a>,
-                  <a href="https://rctl.app">rctl.app</a>, <a href="https://rctl.stream">rctl.stream</a>, <a href="http://rctl.st">rctl.st</a>,
-                  <a href="https://rtek.se">rtek.se</a>, <a href="https://rtek.io">rtek.io</a>, <a href="https://rtek.cloud">rtek.cloud</a>,
-                  <a href="https://rasmusj.se">rasmusj.se</a>, <a href="http://rasmusjönsson.se">rasmusjönsson.se</a>,
-                  <a href="https://rasmus.engineer">rasmus.engineer</a>, <a href="https://tldr.zone">tldr.zone</a>. </p>
-         				</div></div>
 							</div>
 						</div>	
 					</div>
