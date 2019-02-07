@@ -33,10 +33,6 @@ $(function(){
         document.querySelector("#email-primary").setAttribute("href", "mailto:" + info.email);
         document.querySelector("#email-primary-2").innerHTML = info.email;
         document.querySelector("#email-primary-2").setAttribute("href", "mailto:" + info.email);
-        document.querySelector("#phone").innerHTML = info.phone;
-        document.querySelector("#phone-alt").innerHTML = info.phoneAlt;
-        document.querySelector("#phone-note").innerHTML = info.phoneNote;
-        document.querySelector("#phone-alt-note").innerHTML = info.phoneAltNote;
         document.querySelector("#misc").innerHTML = info.misc;
         document.querySelector("#message").innerHTML = info.message;
         document.querySelector("#terminal-content").innerHTML = info.terminalContent;
@@ -44,4 +40,11 @@ $(function(){
         document.querySelectorAll(".dynamic-content").forEach(x => x.style.display = "block")
         info.warning ? showWarning(info.warning) : hideWarning() 
     });
+		document.querySelector("#show-more").addEventListener("click", e => {
+			document.querySelectorAll(".show-more").forEach(x => x.style.display = "none");
+			document.querySelectorAll(".more").forEach(x => x.style.display = "block");
+			document.querySelectorAll(".anti-more").forEach(x => x.style.display = "none");
+			e.preventDefault();
+			return false;
+		})
 });

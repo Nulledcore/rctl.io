@@ -12,24 +12,26 @@
   <link rel="stylesheet" href="css/console.min.css">
 </head>
 
-<body>
+<body class="blue-grey darken-2 white-text">
   <main>
     <div id="rt-info-message" style="visibility: hidden;"></div>
     </div>
     <div class="profile-picture center-align">
       <img class="responsive-img circle hoverable z-depth-3" src="img/rasmus2.jpg">
-      <h2 class="grey-text text-darken-2 ">
+      <h2 class="white-text">
         Rasmus Jönsson
       </h2>
       <h4 class="r-email">
-        <a href="" class="email grey-text" target="_blank" id="email-primary">
+        <a href="" class="email white-text darken-3" target="_blank" id="email-primary">
           <div class="preloader-wrapper small active">
             <div class="spinner-layer spinner-green-only">
               <div class="circle-clipper left">
                 <div class="circle"></div>
-              </div><div class="gap-patch">
+              </div>
+              <div class="gap-patch">
                 <div class="circle"></div>
-              </div><div class="circle-clipper right">
+              </div>
+              <div class="circle-clipper right">
                 <div class="circle"></div>
               </div>
             </div>
@@ -39,19 +41,22 @@
       <div class="r-social">
         <div class="row">
           <div class="col m3 s6">
-            <a href="https://medium.com/@rctl" target="_blank" class="btn white-text blue z-depth-1">Medium</a>
+            <a href="https://medium.com/@rctl" target="_blank" class="btn white-text blue z-depth-4">Medium</a>
           </div>
           <div class="col m3 s6">
-            <a href="https://twitter.com/_rctl" target="_blank" class="btn white-text blue z-depth-1">Twitter</a>
+            <a href="https://twitter.com/_rctl" target="_blank" class="btn white-text blue z-depth-4">Twitter</a>
           </div>
           <div class="col m3 s6">
-            <a href="https://github.com/rctl" target="_blank" class="btn white-text blue z-depth-1">GitHub</a>
+            <a href="https://github.com/rctl" target="_blank" class="btn white-text blue z-depth-4">GitHub</a>
           </div>
           <div class="col m3 s6">
-            <a href="https://www.linkedin.com/in/rasmusjoensson/" target="_blank" class="btn white-text blue z-depth-1">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/rasmusjoensson/" target="_blank" class="btn white-text blue z-depth-4">LinkedIn</a>
           </div>
         </div>
       </div>
+      <p class="center white-text">
+        <i id="message">...</i>
+      </p>
     </div>
     <div class="container">
       <div class="console-top">/bin/bash</div>
@@ -60,40 +65,73 @@
           <span class="green-text text-darken-2">$</span> cat metadata.txt
           <br>
           <p id="terminal-content">
-            
+
           </p>
         </div>
         <span class="green-text text-darken-2">$ </span>
         <span class="bash" id="terminal"></span>
       </div>
-      <p class="center">
-        <i id="message">
-          ...
-        </i>
-      </p>
-      <h5 class="center">Experience</h5>
       <div class="work">
-        <div class="row">
-          <div class="col m10 offset-m1 s12">
-            <div class="card horizontal ac-darkblue">
+          <!--<div class="col m10 offset-m1 s12 work-card">
+            <div class="card horizontal z-depth-3 ac-darkblue blue-grey darken-3">
               <div class="card-image valign-wrapper">
                 <a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" style="width: 90px; margin-left: 20px;"></a>
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <h5 class="work-position">Production Engineering Intern <small class="right work-time hide-on-med-and-down">Jun-Sep
-                      2018</small></h5>
-                  <p class="work-title">Facebook<span class="hide-on-large-only work-time-small grey-text text-darken-2"><br>
-                      Jun-Sep 2018</span></p>
+                  <h5 class="work-position">Production Engineering <small class="right work-time hide-on-med-and-down">
+                      From March 2019</small></h5>
+                  <p class="work-title">Facebook<span class="hide-on-large-only work-time-small"><br>
+                      From March 2019</span></p>
                   <p class="hide-on-med-and-down">
-                    Joined Facebook in Dublin for the summer as a production engineer.
+										Dublin, Ireland.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col m10 offset-m1 s12">
-            <div class="card horizontal ac-teal">
+			    --!>
+          <div class="col m10 s12 work-card">
+            <div class="card horizontal z-depth-3 ac-darkblue blue-grey darken-3">
+              <div class="card-image valign-wrapper">
+                <a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" style="width: 90px; margin-left: 20px;"></a>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5 class="work-position">Production Engineering Intern <small class="right work-time hide-on-med-and-down">Summer
+                      2018</small></h5>
+                  <p class="work-title">Facebook<span class="hide-on-large-only work-time-small"><br>
+                      Summer 2018</span></p>
+                  <p class="hide-on-med-and-down">
+										Dublin, Ireland.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m10 offset-m1 s12 anti-more work-card">
+            <div class="card horizontal ac-red z-depth-3 blue-grey darken-3">
+              <div class="card-image valign-wrapper">
+                <a href="https://opera.com/" target="_blank"><img src="img/opera.png" style="width: 80px; margin-left: 20px;"></a>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                 <h5 class="work-position">Software Engineering Intern <small class="right work-time hide-on-med-and-down">Summer
+                      2017</small></h5>
+                  <p class="work-title">Opera Software <span class="hide-on-large-only work-time-small "><br>
+                      Summer 2017</span></p>
+                  <p class="hide-on-med-and-down">
+										
+									</p>
+                </div>
+              </div>
+            </div>
+          </div>
+					<div class="col m10 offset-m1 s12 center show-more">
+						<a href="#" class="btn-flat white-text" id="show-more">Show full work history</a>
+					</div>	
+          <div class="col m10 offset-m1 s12 work-card more">
+            <div class="card horizontal ac-teal z-depth-3 blue-grey darken-3">
               <div class="card-image valign-wrapper">
                 <a href="https://worldish.se/" target="_blank"><img src="https://worldish.se/images/logo.png" style="width: 90px; margin-left: 20px;"></a>
               </div>
@@ -101,77 +139,78 @@
                 <div class="card-content">
                   <h5 class="work-position">Product Manager <small class="right work-time hide-on-med-and-down">Nov
                       2017 - May 2018</small></h5>
-                  <p class="work-title">Worldish AB<span class="hide-on-large-only work-time-small grey-text text-darken-2"><br>
-                      Nov 2017 - May 2018</span></p>
-                  <p class="hide-on-med-and-down">Managed a small product team at startup Worldish AB. Worked with technical arcitecture, product design and team management. The core technology in-use was Kotlin and Go.
+                  <p class="work-title">Worldish AB<span class="hide-on-large-only work-time-small "><br>
+                      Nov 2017 - May 2018</span> (part-time)</p>
+                  <p class="hide-on-med-and-down">
+										
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col m10 offset-m1 s12">
-            <div class="card horizontal ac-yellow">
+          <div class="col m10 offset-m1 s12 work-card more">
+            <div class="card horizontal ac-yellow z-depth-3 blue-grey darken-3">
               <div class="card-image valign-wrapper">
                 <a href="http://unitalent.se/" target="_blank"><img src="img/unitalent.png" style="width: 60px; margin-left: 30px;margin-right: 20px;"></a>
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <h5 class="work-position">Lead Developer <small class="right work-time hide-on-med-and-down">Feb 2017
+                  <h5 class="work-position">Software Engineer <small class="right work-time hide-on-med-and-down">Feb
+                      2017
                       - Mar 2018</small></h5>
-                  <p class="work-title">Unitalent AB <span class="hide-on-large-only work-time-small grey-text text-darken-2"><br>
-                      Feb 2017 - Apr 2018</span></p>
-                  <p class="hide-on-med-and-down">Planned and co-developed an application in C# .NET for usage in a
-                    labboratory.</p>
+                  <p class="work-title">Unitalent AB <span class="hide-on-large-only work-time-small "><br>
+                      Feb 2017 - Apr 2018</span> (part-time)</p>
+                  <p class="hide-on-med-and-down">
+										
+									</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col m10 offset-m1 s12">
-            <div class="card horizontal ac-red">
+          <div class="col m10 offset-m1 s12 more work-card">
+            <div class="card horizontal ac-red z-depth-3 blue-grey darken-3">
               <div class="card-image valign-wrapper">
                 <a href="https://opera.com/" target="_blank"><img src="img/opera.png" style="width: 80px; margin-left: 20px;"></a>
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <h5 class="work-position">Software Engineering Intern <small class="right work-time hide-on-med-and-down">Jun-Aug
+                 <h5 class="work-position">Software Engineering Intern <small class="right work-time hide-on-med-and-down">Summer
                       2017</small></h5>
-                  <p class="work-title">Opera Software <span class="hide-on-large-only work-time-small grey-text text-darken-2"><br>
-                      Jun-Aug 2017</span></p>
-                  <p class="hide-on-med-and-down">Was an intern at Opera during the summer. Worked with tasks targeted
-                    towards productivity. Mastered Python in a week. Worked with AngularJS, Java and more.</p>
+                  <p class="work-title">Opera Software <span class="hide-on-large-only work-time-small "><br>
+                      Summer 2017</span></p>
+                  <p class="hide-on-med-and-down">
+										
+									</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col m10 offset-m1 s12">
-            <div class="card horizontal ac-orange">
+          <div class="col m10 offset-m1 s12 more work-card">
+            <div class="card horizontal ac-orange z-depth-3 blue-grey darken-3">
               <div class="card-image valign-wrapper">
                 <a href="https://xlent.se/" target="_blank"><img src="img/xlent.png" style="width: 80px; margin-left: 20px;"></a>
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <h5 class="work-position">Software Developer<small class="right work-time hide-on-med-and-down">Jun
-                      2015 - Aug 2016</small></h5>
-                  <p class="work-title">XLENT AB <span class="hide-on-large-only work-time-small grey-text text-darken-2"><br>
-                      Jun 2015 - Aug 2016</span></p>
-                  <p class="hide-on-med-and-down">Intern at XLENT summer of 2015 and 2016, worked with many different
-                    web projects. Worked with KnockoutJS, PHP, C# .NET, RavenDB and more.
+                  <h5 class="work-position">Software Engineering Intern<small class="right work-time hide-on-med-and-down">Summer 2015,
+                      2016</small></h5>
+                  <p class="work-title">XLENT AB <span class="hide-on-large-only work-time-small">
+                  	<br>Summer 2015, 2016</span></p>
+                  <p class="hide-on-med-and-down">
+										
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </div>
-      <div class="center">
-        <a href="/rasmus_jonsson_cv_2017.pdf" class="btn blue"><i class="material-icons left">picture_as_pdf</i>Download
+      <div class="center more">
+        <a href="/rasmus_jonsson_cv_2017.pdf" class="btn blue z-depth-4"><i class="material-icons left">picture_as_pdf</i>Download
           full CV</a>
         <br><br>
       </div>
       <br>
-      <h5 class="r-title center">Selected posts</h5>
-      <br>
-      <div class="card r-pad ac-purple">
+      <div class="card r-pad ac-purple blue-grey darken-3 z-depth-3">
         <div class="row">
           <div class="col m6 s12">
             <h5>Kubernetes</h5>
@@ -190,7 +229,7 @@
             </p>
           </div>
           <div class="col m6 s12">
-            <h5>Increasing webapp performance</h5>
+            <h5>Performance of WebApps</h5>
             <p>
               With the right tools and the right technology you can increase your website performance by a lot.
               Increasing your site performance
@@ -207,7 +246,7 @@
         </div>
         <div class="row">
           <div class="col m6 s12">
-            <h5>CryptoVoice - Encrypted voice calls</h5>
+            <h5>Encrypted voice calls</h5>
             <p>
               A couple of weeks ago I got started on a new app for android that features encrypted VOIP calls. The idea
               was sparked when
@@ -224,7 +263,7 @@
             </p>
           </div>
           <div class="col m6 s12">
-            <h5>Dynamic Adaptive Streaming over HTTP</h5>
+            <h5>Adaptive Streaming over HTTP</h5>
             <p>
               A while back I wrote a report on dynamic streaming over HTTP (DASH) with a classmate. The report, that
               was limited to about
@@ -245,86 +284,80 @@
       <br>
       <div class="row">
         <div class="col m6 s12">
-          <ul class="collection with-header card no-border ac-green">
-            <li class="collection-header">
-              <h5>Skills</h5>
-            </li>
-            <li class="collection-item">
-              <div>
-                <div class="chip">Go</div>
-                <div class="chip">Docker</div>
-                <div class="chip">Kubernetes</div>
-                <div class="chip">Nginx</div>
-                <div class="chip">DNS</div>
-                <div class="chip">Linux</div>
-                <div class="chip">Python</div>
-                <div class="chip">Java</div>
-                <div class="chip">Systems Architecture</div>
-                <div class="chip">Leadership</div>
-                <div class="chip">Project management</div>
-                <div class="chip">TCP/IP</div>
-                <div class="chip">C# .NET</div>
+          <div class=" card blue-grey darken-3 ac-green">
+            <div class="card-stacked">
+              <div class="card-content">
+                <h5>Skills</h5>
+                <div>
+                  <div class="chip">Go</div>
+                  <div class="chip">Docker</div>
+                  <div class="chip">Kubernetes</div>
+                  <div class="chip">Nginx</div>
+                  <div class="chip">DNS</div>
+                  <div class="chip">Linux</div>
+                  <div class="chip">Python</div>
+                  <div class="chip">Networking</div>
+                  <div class="chip">Systems Architecture</div>
+                  <div class="chip">Leadership</div>
+                  <div class="chip">Project management</div>
+                  <div class="chip">Production</div>
+                  <div class="chip">C# .NET</div>
+                </div>
               </div>
-            </li>
-          </ul>
-          <ul class="collection with-header card no-border ac-blue">
-            <li class="collection-header">
-              <h5>Studies</h5>
-              I study computer science at Linköping University. Doing courses at master level and finishing up last
-              part on my B.Sc. The plan is to graduate in 2019.
-            </li>
-          </ul>
-          <ul class="collection with-header card no-border ac-deep-orange">
-            <li class="collection-header">
-              <h5>Publications</h5>
-              These are articles published by me as part of my studies.
-            </li>
-            <li class="collection-item">
-              <div>
-                <b>HTTP/2, Server Push and Branched Video</b> <br><a href="http://liu.diva-portal.org/smash/record.jsf?dswid=-1209&pid=diva2%3A1113506&c=1&searchType=SIMPLE&language=en&query=&af=%5B%5D&aq=%5B%5B%7B%22freeText%22%3A%22rasmus+jönsson%22%7D%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&onlyFullText=false&sf=all">View
-                  on e-pub</a>
+            </div>
+          </div>
+          <div style="display:none;" class="card no-border ac-blue blue-grey darken-3">
+            <div class="card-stacked">
+              <div class="card-content">
+                <h5>Education</h5>
+              	Degree of B.Sc in Information Technology from Linköping University.
+							</div>
+            </div>
+						</div>
+            <div class="card no-border ac-deep-orange blue-grey darken-3">
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>Publications</h5>
+                  <div>
+                    <b>HTTP/2, Server Push and Branched Video</b> <br><a href="http://liu.diva-portal.org/smash/record.jsf?dswid=-1209&pid=diva2%3A1113506&c=1&searchType=SIMPLE&language=en&query=&af=%5B%5D&aq=%5B%5B%7B%22freeText%22%3A%22rasmus+jönsson%22%7D%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&onlyFullText=false&sf=all">View
+                      on e-pub</a>
+                  </div><br>
+                  <div>
+                    <b>Dynamic Adaptive Streaming over HTTP </b><br><a href="https://drive.google.com/file/d/0B_J4Ljo0PdiPdjl3bFk3T1BmNVk/view?usp=sharing">Download
+                      PDF</a>
+                  </div>
+                </div>
               </div>
-            </li>
-            <li class="collection-item">
-              <div>
-                <b>Dynamic Adaptive Streaming over HTTP </b><br><a href="https://drive.google.com/file/d/0B_J4Ljo0PdiPdjl3bFk3T1BmNVk/view?usp=sharing">Download
-                  PDF</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col m6 s12 progress dynamic-loading">
+            </div>
+          </div>
+          <div class="col m6 s12 progress dynamic-loading">
             <div class="indeterminate"></div>
-        </div>
-        <div class="col m6 s12 dynamic-content">
-          <ul class="collection with-header card no-border ac-cyan">
-            <li class="collection-header">
-              <h5>Contact</h5>
-            </li>
-            <li class="collection-item">
-              <span class="title bold">
-                <i class="mdi-action-speaker-notes right"></i>Email</span>
-              <p>
+          </div>
+          <div class="col m6 s12 dynamic-content">
+            <div class="card no-border ac-cyan blue-grey darken-3">
+             <div class="card-stacked">
+              <div class="card-content">
+								<h5>Contact</h5>
+                <span class="title bold">
+                  <i class="mdi-action-speaker-notes right"></i>Email</span><br>
+                <p>
                   <a href="" target="_blank" id="email-primary-2"></a>
-              </p>
-            </li>
-            <li class="collection-item">
-              <span class="title bold">
-                <i class="mdi-action-speaker-notes right"></i>Telephone</span>
-              <p>
-                <span id="phone"></span> <i class="grey-text text-lighten-1" id="phone-note"></i><br>
-                <span id="phone-alt"></span> <i class="grey-text text-lighten-1" id="phone-alt-note"></i>
-              </p>
-            </li>
-            <li class="collection-item">
-              <span id="misc"></span>
-              <br>
-              <p> The following domains are owned and operated by me: </p> <p> <a href="https://rctl.io">rctl.io</a>, <a href="https://rctl.xyz">rctl.xyz</a>, <a href="https://rctl.email">rctl.email</a>, <a href="https://rctl.app">rctl.app</a>, <a href="https://rctl.stream">rctl.stream</a>, <a href="http://rctl.st">rctl.st</a>, <a href="https://rtek.se">rtek.se</a>, <a href="https://rtek.io">rtek.io</a>, <a href="https://rtek.cloud">rtek.cloud</a>, <a href="https://rasmusj.se">rasmusj.se</a>, <a href="http://rasmusjönsson.se">rasmusjönsson.se</a>, <a href="https://rasmus.engineer">rasmus.engineer</a>, <a href="https://tldr.zone">tldr.zone</a>. </p>
-            </li>
-          </ul>
+                </p>
+								<br>                
+								<span id="misc"></span>
+                <br><br>
+                <p> The following domains are owned and operated by me: </p>
+                <p> <a href="https://rctl.io">rctl.io</a>, <a href="https://rctl.xyz">rctl.xyz</a>, <a href="https://rctl.email">rctl.email</a>,
+                  <a href="https://rctl.app">rctl.app</a>, <a href="https://rctl.stream">rctl.stream</a>, <a href="http://rctl.st">rctl.st</a>,
+                  <a href="https://rtek.se">rtek.se</a>, <a href="https://rtek.io">rtek.io</a>, <a href="https://rtek.cloud">rtek.cloud</a>,
+                  <a href="https://rasmusj.se">rasmusj.se</a>, <a href="http://rasmusjönsson.se">rasmusjönsson.se</a>,
+                  <a href="https://rasmus.engineer">rasmus.engineer</a>, <a href="https://tldr.zone">tldr.zone</a>. </p>
+         				</div></div>
+							</div>
+						</div>	
+					</div>
         </div>
       </div>
-    </div>
   </main>
   <a href="https://github.com/rctl/rctl.io" target="_blank" id="fork">
     <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
