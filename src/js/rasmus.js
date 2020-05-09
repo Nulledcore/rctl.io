@@ -10,8 +10,8 @@ $(function(){
         },
     });
     firebase.initializeApp({
-        apiKey: "AIzaSyBJL5xxdHbHeFD9hI69ekkwfRzKzN8HjsE",
-        projectId: "rasmusj-se"
+        apiKey: "AIzaSyDom7L45jAgXTkiMlPK9dP0v8yAPKuc44g",
+        projectId: "rctl-io"
     });
     function showWarning(text){
         document.getElementById("rt-info-message").style.visibility = "visible";
